@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <script
+      src="https://kit.fontawesome.com/a463fe0014.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <nav>
+        <div class="circle">
+          <i class="fa-solid fa-angles-left"></i>
+        </div>
+        <div class="circle">
+            <i class="fa-solid fa-bars"></i></div>
+      </nav>
+      <img src="rickroll.jpg" class="song-img">
+      <h1>Never gonna give you up</h1>
+      <p>Rick Astley</p>
+      <audio id="song">
+        <source src="Rick Astley - Never Gonna Give You Up (Official Music Video).mp3">
+      </audio>
+      <input type="range" id="progress">
+      <div class="controls">
+        <div><i class="fa-solid fa-backward"></i></div>
+        <div onclick="playPause()"><i class="fa-solid fa-play" id="controlIcon"></i></div>
+        <div><i class="fa-solid fa-forward"></i></div>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
